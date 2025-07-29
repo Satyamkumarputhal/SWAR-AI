@@ -82,7 +82,7 @@ const VoiceUpload = () => {
   };
 
   const continueToInstruments = () => {
-    document.getElementById('instruments')?.scrollIntoView({ behavior: 'smooth' });
+    window.location.href = '/instrument-selection';
   };
 
   return (

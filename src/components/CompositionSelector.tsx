@@ -51,7 +51,10 @@ const CompositionSelector = () => {
 
   const selectComposition = (compositionId: string) => {
     setSelectedComposition(compositionId);
-    document.getElementById('voice-upload')?.scrollIntoView({ behavior: 'smooth' });
+    // Navigate to voice recording page
+    setTimeout(() => {
+      window.location.href = '/voice-recording';
+    }, 1000);
   };
 
   return (
@@ -169,7 +172,7 @@ const CompositionSelector = () => {
             <div className="inline-flex items-center gap-2 px-6 py-3 bg-primary/10 border border-primary/20 rounded-full">
               <Volume2 className="w-5 h-5 text-primary" />
               <span className="text-primary font-medium">
-                Composition selected! Continue to voice upload below.
+                Composition selected! Redirecting to voice recording...
               </span>
             </div>
           </div>

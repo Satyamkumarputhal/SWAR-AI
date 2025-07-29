@@ -100,7 +100,7 @@ const InstrumentSelector = () => {
   };
 
   const generateFinalComposition = () => {
-    document.getElementById('final-composition')?.scrollIntoView({ behavior: 'smooth' });
+    window.location.href = '/finalize-composition';
   };
 
   return (

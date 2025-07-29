@@ -78,8 +78,8 @@ const ComposerForm = () => {
         description: "Your musical composition has been created. Scroll down to view the results.",
       });
       
-      // Scroll to compositions section
-      document.getElementById('compositions')?.scrollIntoView({ behavior: 'smooth' });
+      // Navigate to composition selection
+      window.location.href = '/select-composition';
     }, 3000);
   };
 
